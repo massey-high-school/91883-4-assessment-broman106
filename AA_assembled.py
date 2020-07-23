@@ -1,5 +1,10 @@
 # Integer checking function
 
+def statement_decorator(statement, decoration):
+    print(decoration * len(statement))
+    print(statement)
+    print(decoration * len(statement))
+    return ""
 
 #number checking function goes here
 def intcheck(question, low=None, high=None):
@@ -42,11 +47,11 @@ def intcheck(question, low=None, high=None):
 
 # *** Main Routine ****
 how_many = intcheck("How many questions do you want? ", 1, 50)
+correct = 0
+incorrect = 0
 
 lowest = intcheck("Low Number: ")
 highest = intcheck("High Number: ", lowest + 1)
-
-
 
 # answers for quiz
 import random
@@ -54,12 +59,15 @@ import random
 LOW = 1
 HIGH= 50
 
+quiz_history = []
+
 # question generator
 for item in range(1, how_many + 1):
     num_1 = random.randint(LOW, HIGH)
     num_2 = random.randint(LOW, HIGH)
 
     # states question
+    print()
     question = "{} + {} ".format(num_1,num_2)
 
     answer = int(input(question))
@@ -67,8 +75,25 @@ for item in range(1, how_many + 1):
 
     # tell user if they are right
     if answer == right_ans :
-        print("kapai my kahi you got it right keep going :)")
+        result = "correct"
+        feedback = "*** kapai my kahi keep going ****"
+        decoration = "*"
+        statement_decorator(feedback, decoration)
 
     else:
-        print("!!!!sorry my g you got it wrong better luck next time!!!!")
 
+        print()
+        statement_decorator("!! sorry my g you got it wrong keep trying !!", "!")
+        result = "incorrect"
+
+
+    quiz_result = "round {}: {}".format(item, result)
+    quiz_history.append(quiz_result)
+
+# game history
+
+print()
+print("***** results *****")
+
+for item in quiz_history:
+    print(item)

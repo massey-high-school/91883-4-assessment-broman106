@@ -1,0 +1,5 @@
+- recycle statement generator from LU (separate component)
+- save 03_rounds as AA_assembled.py (push <F5> to rename)
+- add statement generator to assembled program and decorate feedback
+
+- Round summary (see here: https://masseyhighschoolnz-my.sharepoint.com/personal/jgottschalk_masseyhigh_school_nz/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjgottschalk%5Fmasseyhigh%5Fschool%5Fnz%2FDocuments%2FProjects%2F01%5FTutorials%2F11%5F91883%5F84%5FProgramming%2FL1%5FVideo%5FExtras%2Fgame%5Fhistory%2Emp4&parent=%2Fpersonal%2Fjgottschalk%5Fmasseyhigh%5Fschool%5Fnz%2FDocuments%2FProjects%2F01%5FTutorials%2F11%5F91883%5F84%5FProgramming%2FL1%5FVideo%5FExtras&originalPath=aHR0cHM6Ly9tYXNzZXloaWdoc2Nob29sbnotbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvamdvdHRzY2hhbGtfbWFzc2V5aGlnaF9zY2hvb2xfbnovRWFhRWZBSlRYcEpQcl8xVlNqVURCTHNCRkZnRnBZeHhWeTltZVV0UzJSeEFDdz9ydGltZT04WmM3dXlvczJFZw)
